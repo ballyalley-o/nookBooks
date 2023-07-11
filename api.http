@@ -9,17 +9,17 @@ POST http://localhost:3001/books HTTP/1.1
 Content-Type: application/json
 
 {
-  "title": "Harry Potter"
+  "title": "Forest Gump"
 }
 
 ###
 
 # Update a book
-PUT http://localhost:3001/books/1 HTTP/1.1
+PUT http://localhost:3001/books/3 HTTP/1.1
 Content-Type: application/json
 
 {
-  "title": "Forest Gump"
+  "title": "Forest Gump part 2"
 }
 
 ###
