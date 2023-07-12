@@ -1,7 +1,7 @@
 import { SERVER_URL } from '../config/config-global'
 
-function path(server, sublinks) {
-  return server + sublinks
+function path(server, sublink) {
+  return `${server}${sublink}`
 }
 
 export const Sublinks = {

@@ -6,6 +6,7 @@ const BooksContext = createContext()
 
 function Provider({ children }) {
   const [books, setBooks] = useState([])
+
   const fetchBooks = async () => {
     const response = await axios.get(PATH_BOOKS.BOOKS)
 
