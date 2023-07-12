@@ -5,8 +5,8 @@ function BookCreate() {
   const [title, setTitle] = useState('')
   const { createBook } = useContext(BookContext)
 
-  const handleChange = (event) => {
-    setTitle(event.target.value)
+  const handleChange = (e) => {
+    setTitle(e.target.value)
   }
 
   const handleSubmit = (e) => {
@@ -17,7 +17,7 @@ function BookCreate() {
 
   return (
     <div className='book-create'>
-      <h3>Add a Book</h3>
+      <h3>Add your Book</h3>
       <form onSubmit={handleSubmit}>
         <label>Title</label>
         <input className='input' value={title} onChange={handleChange} />
